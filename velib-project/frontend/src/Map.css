@@ -1,0 +1,39 @@
+/* src/Map.css */
+
+.map-container {
+  display: flex;       /* Active l'alignement côte-à-côte */
+  flex-direction: row; /* Force la direction gauche -> droite */
+  width: 100%;
+  /* IMPORTANT : On soustrait la hauteur du header (environ 80px) 
+     pour que la carte ne dépasse pas en bas de l'écran 
+  */
+  height: calc(100vh - 85px); 
+  position: relative;
+}
+
+.controls-panel {
+  width: 350px;       /* Largeur fixe pour la barre latérale */
+  min-width: 350px;   /* Empêche la barre d'être écrasée */
+  background: white;
+  z-index: 10;
+  padding: 20px;
+  overflow-y: auto;   /* Scroll uniquement dans la barre si besoin */
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+/* NOUVEAU : Cette classe va envelopper la carte pour qu'elle prenne tout l'espace */
+.map-display-area {
+  flex: 1;            /* "Prends tout l'espace restant à droite" */
+  position: relative; /* Nécessaire pour que Mapbox se positionne bien */
+  width: 100%;
+  height: 100%;
+}
+
+/* Style optionnel pour les stats */
+.stats {
+  background: #f0f2f5;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 20px;
+  border: 1px solid #ddd;
+}
