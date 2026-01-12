@@ -45,3 +45,20 @@ pip install -r requirements.txt
 
 # Lancement (L'import du CSV se fait au premier lancement)
 python app.py
+```
+
+### 1. Installation du Frontend
+```bash
+cd frontend
+# Installation 
+npm install
+
+# Lancement
+npm start
+```
+### 1. Compte admin test en cas de soucis
+```bash
+login : admin
+mdp : admin123
+```
+Merci d'avoir lu ce readme, cordialement.
