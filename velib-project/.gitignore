@@ -1,0 +1,14 @@
+# --- SECTION PYTHON (Backend) ---
+backend/venv/
+backend/__pycache__/
+backend/instance/
+backend/*.db
+backend/*.pyc
+__pycache__/
+*.db
+
+# --- SECTION NODE (Frontend) ---
+frontend/node_modules/
+frontend/build/
+frontend/.env
+.DS_Store
